@@ -5,7 +5,7 @@
 
 <!-- Typing SVG -->
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=1000&color=FF2140&center=true&vCenter=true&multiline=false&repeat=true&width=700&height=45&lines=Creator+of+CrewCore+%E2%80%94+%231+Among+Us+Mod+Ecosystem;CurseForge+Top+5+%E2%80%94+32%2B+Stars+%7C+16%2B+Forks;BepInEx+IL2CPP+%2B+Server-Side+Bytecode+VM;Real-Time+WebSocket+%2B+RSA-PSS+Signed+Pipeline;5%2B+Years+Building+Among+Us+Tools" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=1000&color=FF2140&center=true&vCenter=true&multiline=false&repeat=true&width=700&height=45&lines=Creator+of+CrewCore+%E2%80%94+%231+Among+Us+Mod+Ecosystem;CurseForge+Top+5+%E2%80%94+32%2B+Stars+%7C+16%2B+Forks;BepInEx+IL2CPP+Plugin+Developer;Full-Stack+Mod+Ecosystem+%7C+Client+%2B+Server+%2B+Web;5%2B+Years+Building+Among+Us+Tools" alt="Typing SVG" />
 </a>
 
 <br/>
@@ -32,9 +32,6 @@
 &nbsp;
 <img src="https://img.shields.io/github/license/MRLuke956/ModMenuCrew?style=for-the-badge&color=1a1a2e" alt="License" />
 
-<br/><br/>
-
-<img src="https://komarev.com/ghpvc/?username=MRLuke956&style=for-the-badge&color=FF2140&label=PROFILE+VIEWS" alt="Profile Views" />
 
 </div>
 
@@ -47,14 +44,14 @@ name: Luke Dennyel
 location: Brazil
 role: Independent Software Developer
 focus: Game modding, reverse engineering, real-time systems
-building: CrewCore — full-stack Among Us mod ecosystem (since 2025)
-stack: C#/.NET (BepInEx IL2CPP) | Node.js (WebSocket + Crypto) | Python | HTML/CSS/JS
+building: CrewCore — full-stack Among Us mod ecosystem (since 2021)
+stack: C#/.NET (BepInEx IL2CPP) | Node.js | Python | HTML/CSS/JS
 achievements: CurseForge Top 5 frontpage | Starstruck badge | 5+ years in Among Us modding
 ```
 
-I'm the creator of **[CrewCore](https://crewcore.online)**, the **#1 Among Us mod** ranked [Top 5 on CurseForge](https://www.curseforge.com/among-us/all-mods/modmenucrew) — a full-stack ecosystem with **80+ features** spanning a C# BepInEx IL2CPP plugin, a Node.js real-time backend, a web platform with Stripe-powered key system, and a Python Discord bot.
+I'm the creator of **[CrewCore](https://crewcore.online)**, the **#1 Among Us mod** ranked [Top 5 on CurseForge](https://www.curseforge.com/among-us/all-mods/modmenucrew) — a full-stack ecosystem with **80+ features** spanning a C# BepInEx IL2CPP plugin, a real-time backend, a web platform, and a Discord bot.
 
-What makes CrewCore different from other mods: the entire UI is **compiled server-side into signed bytecode**, streamed via WebSocket, and executed client-side by a custom IMGUI virtual machine. This means UI updates ship instantly without any client-side patches — a production architecture rarely seen in game modding.
+What makes CrewCore different: the mod uses a **server-driven UI architecture** — the interface is rendered dynamically from the server, meaning updates ship instantly without client-side patches. The entire pipeline is cryptographically signed and encrypted end-to-end.
 
 **My journey:** Started with [CrewMod](https://github.com/MRLuke956/CrewMod) in 2021 as a small Among Us mod, evolved into the full CrewCore ecosystem by 2023, and now maintain one of the most feature-rich Among Us modding platforms available.
 
@@ -62,33 +59,19 @@ What makes CrewCore different from other mods: the entire UI is **compiled serve
 
 ### Architecture
 
-> How CrewCore's server-side bytecode UI pipeline works:
+> CrewCore is a **full-stack mod ecosystem** — not just a client plugin.
 
 ```mermaid
 graph LR
-    A["C# Client<br/>(BepInEx IL2CPP)"] -- "WebSocket :9223" --> B["Node.js Server"]
-    B -- "7 Tab Compilers" --> C["GhostCompiler<br/>Bytecode Assembler"]
-    C -- "RSA-PSS Sign<br/>Worker Pool" --> D["POL5 Encrypted<br/>Payload"]
-    D -- "Stream" --> A
-    A -- "VM Execute<br/>Opcodes" --> E["IMGUI<br/>Renderer"]
-    A -- "HTTP :9222" --> F["Web Radar<br/>(Embedded)"]
+    A["C# Client Plugin"] -- "Real-Time Connection" --> B["Backend Server"]
+    B -- "Dynamic UI" --> A
+    A -- "Game Data" --> C["Web Radar"]
+    D["Website + Key System"] -. "Auth" .-> B
     style A fill:#1a1a2e,stroke:#FF2140,color:#fff
     style B fill:#1a1a2e,stroke:#FF2140,color:#fff
     style C fill:#1a1a2e,stroke:#FF2140,color:#fff
     style D fill:#1a1a2e,stroke:#FF2140,color:#fff
-    style E fill:#1a1a2e,stroke:#FF2140,color:#fff
-    style F fill:#1a1a2e,stroke:#FF2140,color:#fff
 ```
-
-<details>
-<summary><b>POL5 Wire Format</b></summary>
-
-```
-[MAGIC "POL5" 4B][RSA_SIGNATURE 256B][SESSION_TOKEN 8B][INVERSE_MAP 256B][SEED 4B][TIMESTAMP 8B][SCRAMBLED_BYTECODE...]
-```
-
-Every UI frame is cryptographically signed and scrambled before transmission. The client VM descrambles and executes opcodes to render the full mod menu interface.
-</details>
 
 ---
 
@@ -106,13 +89,9 @@ Every UI frame is cryptographically signed and scrambled before transmission. Th
   ![BepInEx](https://img.shields.io/badge/BepInEx-IL2CPP-FF2140?style=flat-square)
   ![Harmony](https://img.shields.io/badge/Harmony-Patches-blueviolet?style=flat-square)
   ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-  ![WebSocket](https://img.shields.io/badge/WebSocket-010101?style=flat-square&logo=socketdotio&logoColor=white)
-  ![RSA-PSS](https://img.shields.io/badge/RSA--PSS-Crypto-FF2140?style=flat-square)
   ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
   ![Stripe](https://img.shields.io/badge/Stripe-008CDD?style=flat-square&logo=stripe&logoColor=white)
   ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white)
-  ![IMGUI](https://img.shields.io/badge/IMGUI-Renderer-FF2140?style=flat-square)
-  ![dnlib](https://img.shields.io/badge/dnlib-Analysis-blueviolet?style=flat-square)
 
 </div>
 
@@ -124,12 +103,12 @@ Every UI frame is cryptographically signed and scrambled before transmission. Th
 
 | Component | Stack | Description |
 |:---------:|:-----:|:------------|
-| **[ModMenuCrew](https://github.com/MRLuke956/ModMenuCrew)** | C# / BepInEx IL2CPP | 80+ features: ESP, impostor control, teleport, speed, noclip, radar, cosmetics unlock, replay system. Custom bytecode VM + IMGUI rendering. **32+ stars** |
-| **Server API** | Node.js / WebSocket | Real-time bytecode compiler (GhostCompiler), RSA-PSS signing via worker thread pool, 7 tab compilers, session management |
-| **[crewcore.online](https://crewcore.online)** | HTML / CSS / JS | Product website with key generation system, 6 Stripe subscription plans, Cloudflare CDN, i18n (EN/PT-BR) |
+| **[ModMenuCrew](https://github.com/MRLuke956/ModMenuCrew)** | C# / BepInEx IL2CPP | 80+ features: ESP, impostor control, teleport, speed, noclip, radar, cosmetics unlock, replay system. **32+ stars** |
+| **Server Backend** | Node.js | Real-time server powering the mod's dynamic UI, authentication, and encrypted communication |
+| **[crewcore.online](https://crewcore.online)** | HTML / CSS / JS | Product website with key system, subscription plans, Cloudflare CDN, i18n (EN/PT-BR) |
 | **Discord Bot** | Python | Community management, announcements, status monitoring for the [CrewCore server](https://discord.gg/crewcore) |
 | **[AI Knowledge Extractor](https://github.com/MRLuke956/amongus-ai-knowledge-extractor)** | C# / dnlib | AI-powered Among Us .NET/Unity decompiler — generates LLM-ready datasets from game assemblies |
-| **Web Radar** | HTML / CSS / JS | Real-time in-browser radar embedded in the mod, served on port 9222 with live player positions |
+| **Web Radar** | HTML / CSS / JS | Real-time in-browser radar with live player positions on the game map |
 
 </div>
 
@@ -169,9 +148,9 @@ Every UI frame is cryptographically signed and scrambled before transmission. Th
 |:--|:--|
 | **CurseForge Top 5** | Frontpage of Among Us mods — competing with established projects |
 | **80+ Features** | ESP, always impostor, teleport, speed hack, noclip, cosmetics unlock, replay system, web radar |
-| **Server-Side UI** | Bytecode VM architecture — UI ships as signed opcodes, not hardcoded client code |
-| **Replay System** | Full game replay with animation, cosmetics rendering, 22+ event types, chat panel |
-| **Web Radar** | Embedded HTTP server serving real-time player positions in-browser |
+| **Server-Driven UI** | Dynamic interface rendered from the server — updates ship instantly, no client patches needed |
+| **Replay System** | Full game replay with animation, cosmetics rendering, event timeline, chat panel |
+| **Web Radar** | Real-time in-browser radar with live player positions on the game map |
 | **AI Tooling** | Built a decompiler that turns Among Us assemblies into LLM-ready knowledge bases |
 | **Active Since 2021** | From CrewMod (first mod) to a full production ecosystem with Stripe monetization |
 
