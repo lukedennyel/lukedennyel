@@ -53,7 +53,7 @@ I'm the creator of **[CrewCore](https://crewcore.online)**, the **#1 Among Us mo
 
 What makes CrewCore different: the mod uses a **server-driven UI architecture** — the interface is rendered dynamically from the server, meaning updates ship instantly without client-side patches. The entire pipeline is cryptographically signed and encrypted end-to-end.
 
-**My journey:** Started with [CrewMod](https://github.com/lukedennyel/CrewMod) in 2025 as a small Among Us mod, evolved into the full CrewCore ecosystem by 2026, and now maintain one of the most feature-rich Among Us modding platforms available.
+**My journey:** Started with [CrewMod](https://github.com/lukedennyel/CrewMod) in 2021 as a small Among Us mod, evolved into the full CrewCore ecosystem by 2026, and now maintain one of the most feature-rich Among Us modding platforms available.
 
 ---
 
