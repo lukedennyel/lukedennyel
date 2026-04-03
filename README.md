@@ -26,11 +26,11 @@
 <br/><br/>
 
 <!-- Dynamic Badges -->
-<img src="https://img.shields.io/github/stars/MRLuke956/ModMenuCrew?style=for-the-badge&logo=github&logoColor=white&label=ModMenuCrew%20Stars&color=FF2140" alt="Stars" />
+<img src="https://img.shields.io/github/stars/lukedennyel/ModMenuCrew?style=for-the-badge&logo=github&logoColor=white&label=ModMenuCrew%20Stars&color=FF2140" alt="Stars" />
 &nbsp;
-<img src="https://img.shields.io/github/forks/MRLuke956/ModMenuCrew?style=for-the-badge&logo=github&logoColor=white&label=Forks&color=1a1a2e" alt="Forks" />
+<img src="https://img.shields.io/github/forks/lukedennyel/ModMenuCrew?style=for-the-badge&logo=github&logoColor=white&label=Forks&color=1a1a2e" alt="Forks" />
 &nbsp;
-<img src="https://img.shields.io/github/license/MRLuke956/ModMenuCrew?style=for-the-badge&color=1a1a2e" alt="License" />
+<img src="https://img.shields.io/github/license/lukedennyel/ModMenuCrew?style=for-the-badge&color=1a1a2e" alt="License" />
 
 
 </div>
@@ -53,7 +53,7 @@ I'm the creator of **[CrewCore](https://crewcore.online)**, the **#1 Among Us mo
 
 What makes CrewCore different: the mod uses a **server-driven UI architecture** — the interface is rendered dynamically from the server, meaning updates ship instantly without client-side patches. The entire pipeline is cryptographically signed and encrypted end-to-end.
 
-**My journey:** Started with [CrewMod](https://github.com/MRLuke956/CrewMod) in 2025 as a small Among Us mod, evolved into the full CrewCore ecosystem by 2026, and now maintain one of the most feature-rich Among Us modding platforms available.
+**My journey:** Started with [CrewMod](https://github.com/lukedennyel/CrewMod) in 2025 as a small Among Us mod, evolved into the full CrewCore ecosystem by 2026, and now maintain one of the most feature-rich Among Us modding platforms available.
 
 ---
 
@@ -103,11 +103,11 @@ graph LR
 
 | Component | Stack | Description |
 |:---------:|:-----:|:------------|
-| **[ModMenuCrew](https://github.com/MRLuke956/ModMenuCrew)** | C# / BepInEx IL2CPP | 80+ features: ESP, impostor control, teleport, speed, noclip, radar, cosmetics unlock, replay system. **32+ stars** |
+| **[ModMenuCrew](https://github.com/lukedennyel/ModMenuCrew)** | C# / BepInEx IL2CPP | 80+ features: ESP, impostor control, teleport, speed, noclip, radar, cosmetics unlock, replay system. **32+ stars** |
 | **Server Backend** | Node.js | Real-time server powering the mod's dynamic UI, authentication, and encrypted communication |
 | **[crewcore.online](https://crewcore.online)** | HTML / CSS / JS | Product website with key system, subscription plans, Cloudflare CDN, i18n (EN/PT-BR) |
 | **Discord Bot** | Python | Community management, announcements, status monitoring for the [CrewCore server](https://discord.gg/crewcore) |
-| **[AI Knowledge Extractor](https://github.com/MRLuke956/amongus-ai-knowledge-extractor)** | C# / dnlib | AI-powered Among Us .NET/Unity decompiler — generates LLM-ready datasets from game assemblies |
+| **[AI Knowledge Extractor](https://github.com/lukedennyel/amongus-ai-knowledge-extractor)** | C# / dnlib | AI-powered Among Us .NET/Unity decompiler — generates LLM-ready datasets from game assemblies |
 | **Web Radar** | HTML / CSS / JS | Real-time in-browser radar with live player positions on the game map |
 
 </div>
@@ -118,22 +118,22 @@ graph LR
 
 <div align="center">
 
-  <a href="https://github.com/MRLuke956/ModMenuCrew">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=MRLuke956&repo=ModMenuCrew&theme=github_dark&hide_border=true&icon_color=FF2140&title_color=FF2140" alt="ModMenuCrew" />
+  <a href="https://github.com/lukedennyel/ModMenuCrew">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=lukedennyel&repo=ModMenuCrew&theme=github_dark&hide_border=true&icon_color=FF2140&title_color=FF2140" alt="ModMenuCrew" />
   </a>
-  <a href="https://github.com/MRLuke956/amongus-ai-knowledge-extractor">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=MRLuke956&repo=amongus-ai-knowledge-extractor&theme=github_dark&hide_border=true&icon_color=FF2140&title_color=FF2140" alt="AI Knowledge Extractor" />
+  <a href="https://github.com/lukedennyel/amongus-ai-knowledge-extractor">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=lukedennyel&repo=amongus-ai-knowledge-extractor&theme=github_dark&hide_border=true&icon_color=FF2140&title_color=FF2140" alt="AI Knowledge Extractor" />
   </a>
 
 </div>
 
 <div align="center">
 
-  <a href="https://github.com/MRLuke956/userAmongKey">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=MRLuke956&repo=userAmongKey&theme=github_dark&hide_border=true&icon_color=FF2140&title_color=FF2140" alt="CrewCore Website" />
+  <a href="https://github.com/lukedennyel/userAmongKey">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=lukedennyel&repo=userAmongKey&theme=github_dark&hide_border=true&icon_color=FF2140&title_color=FF2140" alt="CrewCore Website" />
   </a>
-  <a href="https://github.com/MRLuke956/MRLuke956.github.io">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=MRLuke956&repo=MRLuke956.github.io&theme=github_dark&hide_border=true&icon_color=FF2140&title_color=FF2140" alt="Portfolio" />
+  <a href="https://github.com/lukedennyel/lukedennyel.github.io">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=lukedennyel&repo=lukedennyel.github.io&theme=github_dark&hide_border=true&icon_color=FF2140&title_color=FF2140" alt="Portfolio" />
   </a>
 
 </div>
@@ -163,14 +163,14 @@ graph LR
 <div align="center">
 
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=MRLuke956&show_icons=true&include_all_commits=true&count_private=true&theme=github_dark&hide_border=true&icon_color=FF2140&title_color=FF2140&rank_icon=github" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=MRLuke956&show_icons=true&include_all_commits=true&count_private=true&theme=default&hide_border=true&icon_color=FF2140&title_color=FF2140&rank_icon=github" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=lukedennyel&show_icons=true&include_all_commits=true&count_private=true&theme=github_dark&hide_border=true&icon_color=FF2140&title_color=FF2140&rank_icon=github" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=lukedennyel&show_icons=true&include_all_commits=true&count_private=true&theme=default&hide_border=true&icon_color=FF2140&title_color=FF2140&rank_icon=github" />
     <img height="165" alt="GitHub Stats" />
   </picture>
   &nbsp;
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs?username=MRLuke956&layout=compact&langs_count=8&theme=github_dark&hide_border=true&title_color=FF2140" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs?username=MRLuke956&layout=compact&langs_count=8&theme=default&hide_border=true&title_color=FF2140" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs?username=lukedennyel&layout=compact&langs_count=8&theme=github_dark&hide_border=true&title_color=FF2140" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs?username=lukedennyel&layout=compact&langs_count=8&theme=default&hide_border=true&title_color=FF2140" />
     <img height="165" alt="Top Languages" />
   </picture>
 
@@ -179,8 +179,8 @@ graph LR
 <div align="center">
 
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=MRLuke956&theme=github-dark&hide_border=true&ring=FF2140&fire=FF2140&currStreakLabel=FF2140" />
-    <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com?user=MRLuke956&theme=default&hide_border=true&ring=FF2140&fire=FF2140&currStreakLabel=FF2140" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=lukedennyel&theme=github-dark&hide_border=true&ring=FF2140&fire=FF2140&currStreakLabel=FF2140" />
+    <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com?user=lukedennyel&theme=default&hide_border=true&ring=FF2140&fire=FF2140&currStreakLabel=FF2140" />
     <img alt="GitHub Streak" />
   </picture>
 
@@ -191,7 +191,7 @@ graph LR
 ### Trophies
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=MRLuke956&theme=darkhub&no-frame=true&no-bg=true&column=7&margin-w=10" alt="Trophies" />
+  <img src="https://github-profile-trophy.vercel.app/?username=lukedennyel&theme=darkhub&no-frame=true&no-bg=true&column=7&margin-w=10" alt="Trophies" />
 </div>
 
 ---
@@ -200,14 +200,14 @@ graph LR
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MRLuke956/MRLuke956/output/github-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MRLuke956/MRLuke956/output/github-snake.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/lukedennyel/lukedennyel/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/lukedennyel/lukedennyel/output/github-snake.svg" />
     <img alt="Snake animation" width="100%" />
   </picture>
 </div>
 
 <!--
-  To enable the snake animation, create .github/workflows/snake.yml in your MRLuke956/MRLuke956 repo:
+  To enable the snake animation, create .github/workflows/snake.yml in your lukedennyel/lukedennyel repo:
   https://github.com/Platane/snk — generates the SVG daily via GitHub Actions
 -->
 
